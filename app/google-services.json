@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "109815913872",
+    "firebase_url": "https://loyalty-app-d3deb.firebaseio.com",
+    "project_id": "loyalty-app-d3deb",
+    "storage_bucket": "loyalty-app-d3deb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:109815913872:android:ec582bc7629b17e6",
+        "android_client_info": {
+          "package_name": "com.loyalty"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "109815913872-h791ckgpfrueq577i009gdh698215kmq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+         "current_key": "AIzaSyBjMqXucWx3nOOMfLfEQ95yRLfCeR63Cyg"    // "current_key": "AIzaSyChZqel7DFCjU9ds-g5PtmTDYybMKnzZco"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

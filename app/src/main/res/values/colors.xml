@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="textBackground">#f5f5f5</color>
+    <color name="grey">#ebebeb</color>
+    <color name="grey1">#c5c5c5</color>
+    <color name="textGreen">#8fbe3e</color>
+    <color name="black2">#6d6d6d</color>
+    <color name="grey2">#6f6f6f</color>
+    <color name="grey3">#e2e2e2</color>
+    <color name="textBackground1">#f3f3f3</color>
+    <color name="bluebg">#f6f6f6</color>
+    <color name="lightgrey">#FAFAFA</color>
+    <color name="lightGreen">#8FBE3E</color>
+    <color name="lightGreen2">#bfda91</color>
+    <color name="darkgrey">#EAEAEA</color>
+    <color name="lightBlack">#3D3D3D</color>
+    <color name="greydark">#F5F5F5</color>
+    <color name="black">#000000</color>
+    <color name="lightPink">#FA8F9B</color>
+    <color name="white">#fff</color>
+    <color name="colorRed">#FF0000</color>
+    <color name="color_red">#FA4E4E</color>
+    <color name="text_camera_popup">#157dfb</color>
+    <color name="viewcolor">#D2D2D2</color>
+    <color name="dialog_color">#e0e2e4</color>
+    <color name="light_blue">#2181F7</color>
+
+
+    <color name="colorBlack">#000</color>
+    <color name="colorLightBlack">#4F4F4F</color>
+    <color name="colorLightGrey">#E6E6E6</color>
+    <color name="colorDarkGrey">#838383</color>
+    <color name="colorGreen">#8DC042</color>
+    <color name="appcolor">#FF4B73B4</color>
+    <color name="dark_blue">#466FB0</color>
+
+</resources>

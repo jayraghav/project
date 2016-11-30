@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/swipe"
+    app:clickToClose="true">
+    <LinearLayout
+        android:tag="Bottom1"
+        android:id="@+id/bottom_wrapper"
+        android:layout_width="160dp"
+        android:paddingTop="@dimen/dp_3"
+        android:paddingBottom="@dimen/dp_3"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/delete"
+            android:text="Delete"
+            android:background="@color/bt_red"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llRowCard"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+
+        android:background="@drawable/rounded_card_green"
+        android:padding="@dimen/dp_10">
+
+        <TextView
+            android:id="@+id/tvExpiryDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:padding="@dimen/dp_5"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tvCardNumber"
+            android:padding="@dimen/dp_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""/>
+
+    </LinearLayout>
+</com.daimajia.swipe.SwipeLayout>

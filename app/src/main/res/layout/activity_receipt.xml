@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.loyalty.activity.customer.ReceiptActivity"
+    android:orientation="vertical">
+    <include layout="@layout/toolbar"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Order Summary"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:background="@color/textBackground"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivTeacherProfile"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/profile"
+            app:civ_border_color="@color/grey"
+            app:civ_border_width="2dp"/>
+        <TextView
+            android:id="@+id/tv_storeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cafe Assist"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/textGreen"/>
+    </LinearLayout>
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedscrollview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvFoodLists"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_0"
+            android:layout_weight="5"
+            android:layout_above="@+id/tvCheckOut">
+        </android.support.v7.widget.RecyclerView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvsubtotal"
+                android:layout_width="@dimen/dp_0"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="@string/subTotal"
+                android:textSize="@dimen/sp_13"
+                android:layout_gravity="center_vertical|center"
+                android:textColor="@color/black2"
+                android:layout_marginLeft="@dimen/dp_40"
+                android:gravity="center|left"/>
+
+            <TextView
+                android:id="@+id/tvsubtotalRs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text=""
+                android:layout_marginRight="@dimen/dp_5"
+                android:textSize="@dimen/sp_13"
+                android:textColor="@color/black2"
+                android:layout_gravity="center_vertical|center"
+                android:gravity="center|right"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvServiceTax"
+                android:layout_width="@dimen/dp_0"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="@string/serviceTax"
+                android:textSize="@dimen/sp_13"
+                android:textColor="@color/black2"
+                android:layout_gravity="center_vertical|center"
+                android:layout_marginLeft="@dimen/dp_40"
+                android:gravity="center|left"/>
+
+            <TextView
+                android:id="@+id/tvServiceTaxRs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text=""
+                android:layout_marginRight="@dimen/dp_5"
+                android:textSize="@dimen/sp_13"
+                android:textColor="@color/black2"
+                android:gravity="center|right"
+                android:layout_gravity="center_vertical|center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvVatTax"
+                android:layout_width="@dimen/dp_0"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="@string/tvVat"
+                android:textSize="@dimen/sp_13"
+                android:textColor="@color/black2"
+                android:layout_gravity="center_vertical|center"
+                android:layout_marginLeft="@dimen/dp_40"
+                android:gravity="center|left"/>
+
+            <TextView
+                android:id="@+id/tvVatTaxRs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text=""
+                android:layout_marginRight="@dimen/dp_5"
+                android:textSize="@dimen/sp_13"
+                android:textColor="@color/black2"
+                android:gravity="center|right"
+                android:layout_gravity="center_vertical|center|right"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvGrandTotal"
+                android:layout_width="@dimen/dp_0"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="@string/grandTotal"
+                android:textSize="@dimen/sp_13"
+                android:textColor="@color/black2"
+                android:layout_gravity="center_vertical|center"
+                android:layout_marginLeft="@dimen/dp_40"
+                android:gravity="center|left"/>
+
+            <TextView
+                android:id="@+id/tvGrandTotalRs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text=""
+                android:layout_marginRight="@dimen/dp_5"
+                android:textSize="@dimen/sp_13"
+                android:textColor="@color/black2"
+                android:gravity="center|right"
+                android:layout_gravity="center_vertical|center|right" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_0"
+            android:layout_weight="1"></LinearLayout>
+        <TextView
+            android:id="@+id/tvCheckOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Payment"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:background="@color/textGreen"/>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dp_40"
+        >
+        <TextView
+            android:id="@+id/tvReferral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/sp_24"
+            android:textColor="@color/black"
+            android:layout_alignParentTop="true"
+            android:text="Referral Code"/>
+        <TextView
+            android:id="@+id/tvCode"
+            android:layout_below="@+id/tvReferral"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="@dimen/sp_18"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:text=" "/>
+        <TextView
+
+            android:id="@+id/tvInvite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/textGreen"
+            android:text="Invite"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="@dimen/sp_18"
+            android:padding="@dimen/dp_8"
+            />
+
+    </RelativeLayout>
+</LinearLayout>

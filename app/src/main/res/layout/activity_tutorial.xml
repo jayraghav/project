@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPagerTutorial"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_10"
+            android:layout_gravity="bottom|center">
+            <com.viewpagerindicator.CirclePageIndicator
+                android:id="@+id/indicatorTutorial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dp_5"
+                android:layout_gravity="bottom|center"
+                app:centered="true"
+                app:fillColor="#ffffff"
+                app:pageColor="#000"
+                app:snap="false" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tvSkip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:gravity="bottom"
+            android:padding="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_5"
+            android:text="Skip"
+            android:textColor="@color/textGreen"
+            android:textSize="@dimen/sp_18"
+            />
+    </FrameLayout>
+
+
+</LinearLayout>

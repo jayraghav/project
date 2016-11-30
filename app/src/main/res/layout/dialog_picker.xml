@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="60dp"
+    android:background="@drawable/bg_rounded"
+    >
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Select Expiry Date"
+    android:textSize="@dimen/sp_20"
+    android:textColor="@color/dark_blue"
+    android:padding="12dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/appcolor"></View>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:orientation="horizontal"
+    android:layout_weight="1"
+    android:gravity="center"
+   >
+    <com.loyalty.utils.PickerView
+        android:id="@+id/pickerMonth"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="200dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="1dp"
+        />
+    <com.loyalty.utils.PickerView
+        android:id="@+id/pickerYear"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="200dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginLeft="1dp"
+        />
+</LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="@android:color/black">
+
+    </View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tvCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CANCEL"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:padding="12dp"/>
+        <View
+            android:layout_width="0.4dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/black">
+
+        </View>
+
+        <TextView
+            android:id="@+id/tvSet"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="SET"
+            android:textColor="@color/appcolor"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:padding="12dp"/>
+    </LinearLayout>
+</LinearLayout>

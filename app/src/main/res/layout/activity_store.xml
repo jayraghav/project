@@ -1,0 +1,94 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <include layout="@layout/toolbar"/>
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tvCatalogue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:textColor="@color/textGreen"
+                    android:text="Catalogue"
+                    android:gravity="center"
+                    android:padding="@dimen/dp_20"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/tvCheckIn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:textColor="@color/textGreen"
+                    android:text="Check-In"
+                    android:gravity="center"
+                    android:padding="@dimen/dp_20"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <com.daimajia.swipe.SwipeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- Bottom View Start-->
+                <LinearLayout
+                    android:background="#66ddff00"
+                    android:id="@+id/bottom_wrapper"
+                    android:layout_width="160dp"
+                    android:weightSum="1"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <!--What you want to show-->
+                </LinearLayout>
+                <!-- Bottom View End-->
+
+                <!-- Surface View Start -->
+                <LinearLayout
+                    android:padding="10dp"
+                    android:background="#ffffff"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <!--What you want to show in SurfaceView-->
+                </LinearLayout>
+            </com.daimajia.swipe.SwipeLayout>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/dp_5"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textGreen"
+            android:text="HOT DEALS"
+            android:visibility="visible"
+            android:textSize="@dimen/sp_18"
+            android:layout_gravity="center"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_marginTop="@dimen/dp_5"
+            android:id="@+id/rvStoreHotDeals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            />
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

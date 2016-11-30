@@ -1,0 +1,111 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="@dimen/dp_10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/grey"
+        android:layout_marginLeft="@dimen/dp_5">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="2"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_table"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:padding="@dimen/dp_10"
+                    android:layout_height="110dp"
+                    android:src="@mipmap/tiger"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_product"
+                    android:layout_width="match_parent"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:layout_height="wrap_content"
+                    android:text="Product 1"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="match_parent"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:layout_height="wrap_content"
+                    android:text="$30"
+                    android:textSize="20sp"/>
+
+                <LinearLayout
+                    android:id="@+id/tv_kam"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|start"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    android:padding="@dimen/dp_5"
+                    android:layout_marginTop="@dimen/dp_10">
+
+                    <ImageView
+                        android:id="@+id/iv_upload"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/add"
+                        android:layout_weight="0.1"/>
+
+                    <TextView
+                        android:id="@+id/iv_facebook"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10"
+                        android:gravity="center"
+                        android:layout_weight="0.3"
+                        android:textSize="18sp"
+                        />
+
+                    <ImageView
+                        android:id="@+id/iv_download"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/add"
+                        android:layout_weight="0.3"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@android:color/black"
+            android:layout_marginTop="5dp"
+
+            />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

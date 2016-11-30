@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/ll_parent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_35"
+            android:gravity="center"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            >
+            <ImageView
+                android:id="@+id/iv_meal_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_14"
+                android:textColor="@color/greydark"
+                android:text="@string/food"
+                android:src="@mipmap/round"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tv_meal_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_14"
+                android:gravity="left|center"
+                android:textColor="@color/grey2"
+                android:text="@string/food"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="match_parent"
+            android:gravity="center|right"
+
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tv_meal_cost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_14"
+                android:textColor="@color/black"
+                android:text="@string/food"
+                android:gravity="right"
+                android:layout_marginRight="@dimen/dp_10"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
